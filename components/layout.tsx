@@ -1,6 +1,8 @@
 import { Layout, Menu } from 'antd';
 import type { MenuProps } from 'antd';
 import { BookOutlined, UserOutlined } from '@ant-design/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBuilding } from '@fortawesome/free-regular-svg-icons';
 
 type Props = { children: React.ReactNode }
 
@@ -27,6 +29,7 @@ export default function LayoutMenu({ children }: Props) {
         >
           <Menu.Item key="1" icon={<UserOutlined />} >Usuarios</Menu.Item>
           <Menu.Item key="2" icon={<BookOutlined />} >Tablas de Referencia</Menu.Item>
+          <Menu.Item key="3" icon={<FontAwesomeIcon icon={faBuilding} />} >Empresas</Menu.Item>
         </Menu>
       </Sider>
       <Layout style={{ padding: '24px 24px 24px' }}>
